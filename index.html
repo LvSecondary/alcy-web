@@ -61,27 +61,27 @@
 
     footer{background:#111;color:#aaa;text-align:center;padding:20px;font-size:.9rem;}
     @keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
 	  <style>
     .imagen-glow {
-      /* Tamaño inicial */
       width: 300px;
       height: auto;
       display: block;
       margin: 50px auto;
 
-      /* Resplandor inicial */
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      /* Resplandor inicial con transparencia */
+      filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
 
-      /* Transición suave */
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      /* Transiciones suaves de transformación y filtro */
+      transition: transform 0.4s ease, filter 0.4s ease;
     }
 
     .imagen-glow:hover {
-      /* Zoom en imagen */
+      /* Zoom al pasar el cursor */
       transform: scale(1.2);
 
-      /* Glow más intenso */
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+      /* Glow intensificado con mayor desenfoque y opacidad */
+      filter: drop-shadow(0 0 25px rgba(0, 255, 255, 0.9));
     }
   </style>
 
@@ -195,6 +195,7 @@
   </script>
 </body>
 </html>
+
 
 
 
