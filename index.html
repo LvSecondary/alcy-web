@@ -61,6 +61,29 @@
 
     footer{background:#111;color:#aaa;text-align:center;padding:20px;font-size:.9rem;}
     @keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+	  <style>
+    .imagen-glow {
+      /* Tamaño inicial */
+      width: 300px;
+      height: auto;
+      display: block;
+      margin: 50px auto;
+
+      /* Resplandor inicial */
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+
+      /* Transición suave */
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .imagen-glow:hover {
+      /* Zoom en imagen */
+      transform: scale(1.2);
+
+      /* Glow más intenso */
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+    }
+  </style>
 
     /* ===== Modo claro ===== */
     body.light-mode{background:#f8f9fa;color:#222;}
@@ -94,7 +117,7 @@
   <section class="hero" id="inicio">
     <canvas id="bgCanvas"></canvas>
     <div class="hero-content">
-	  <img src="logo.png" alt="alcy.logo">
+	  <img src="logo.png" alt="logo" class="imagen-glow">
       <h1>Asociación Laborista Comunitaria de Yucatán</h1>
       <p>Apoyando a instituciones que brindan hogar y esperanza a niños en situación de calle u orfandad.</p>
       <a href="#contacto" class="btn">Contáctanos</a>
@@ -172,6 +195,7 @@
   </script>
 </body>
 </html>
+
 
 
 
